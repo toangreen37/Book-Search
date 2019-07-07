@@ -14,6 +14,7 @@ class App extends Component {
     };
   }
 
+  // Google API
   search() {
     const API_URL = 'https://www.googleapis.com/books/v1/volumes?q=';
     fetch(`${API_URL}${this.state.query}`)
@@ -29,7 +30,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">NYT Google Books Search </h1>
+          <h1 className="App-title">Toan Libary Search </h1>
         </header>
         <div className="container main-content">
           <FormGroup>
